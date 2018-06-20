@@ -431,7 +431,7 @@ class CommentingController extends Controller
     {
         // Enables multiple forms with different names to use the same handler
         $form = $this->CommentsForm();
-        $form->setName('ReplyForm_' . $comment->ID);
+        $form->setHTMLID('ReplyForm_' . $comment->ID);
         $form->addExtraClass('reply-form');
 
         // Load parent into reply form
